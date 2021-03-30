@@ -3,7 +3,7 @@
   --secondary: #3a8dde;
   --tertiary: white;
   --quatrinary: #292B33;
-  --light: #e1f5f4;
+  --light: #f0f0f0;
   --dark: #6c7575;
   --error: rgb(228, 46, 1);
   --border-radius: 0.3rem;
@@ -53,10 +53,12 @@ h1 {
 
 h2 {
   font-size: 2rem;
+  color: var(--secondary);
 }
 
 h3 {
   font-size: 1.75rem;
+  color: var(--primary);
 }
 
 h4 {
@@ -137,14 +139,14 @@ nav a:hover {
   margin: 0 0 20px 0;
   border: 3px solid var(--dark);
   border-radius: var(--border-radius);
-  background-color: var(--light);
+  background-color: var(--tertiary);
   color: var(--dark);
 }
 
 .card-header {
-  color: var(--secondary);
+  color: var(--tertiary);
   margin: 0;
-  background-color: var(--dark);
+  background-color: var(--secondary);
   padding: 0.625rem;
   border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
 }
