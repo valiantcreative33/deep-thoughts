@@ -16,6 +16,15 @@ import Signup from './pages/Signup';
 
 // connection to the back-end server's /graphql endpoint
 const client = new ApolloClient({
+  request: operation => {
+    const token = localStorage.getItem('id_token');
+
+    operation.setContext({
+      headers: {
+        authorization: token ? `Bearer ${token}` : ''
+      }
+    });
+  },
   uri: '/graphql'
 });
 
